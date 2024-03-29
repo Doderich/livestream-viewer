@@ -12,14 +12,13 @@ wget -O $url/start-livestream-viewer.sh https://raw.githubusercontent.com/Doderi
 wget -O $url/auto-start-entry.txt https://raw.githubusercontent.com/Doderich/livestream-viewer/main/auto-start-entry.txt
 
 echo "Please enter the livestream url"
-read livestream_url
+#read livestream_url
 
 livestream_url="https://www.youtube.com/UCA_oHukmsUBrp4GMoxG04Nw/live"
 
 mkdir $HOME/.config/autostart
 touch $HOME/.config/autostart/livestream-viewer.desktop
-home_string="$HOME"
-sed -i "s/HOME_STRING/$home_string/g" $url/auto-start-entry.txt
+sed "s|HOME_STRING|${HOME}|g" $url/auto-start-entry.txt > $HOME/.config/autostart/livestream-viewer.desktop
 cat $url/auto-start-entry.txt > $HOME/.config/autostart/livestream-viewer.desktop
 #/bin/bash /usr/local/livestream-viewer/start-livestream-viewer.sh
 chmod +x $HOME/.config/autostart/livestream-viewer.desktop
