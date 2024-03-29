@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Livestream-Viewer
+Exec=/bin/bash /usr/local/livestream-viewer/start-livestream-viewer.sh
