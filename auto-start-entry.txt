@@ -1,4 +1,4 @@
 [Desktop Entry]
 Type=Application
 Name=Livestream-Viewer
-Exec=/bin/bash $HOME/livestream-viewer/start-livestream-viewer.sh
+Exec=/bin/bash HOME_STRING/livestream-viewer/start-livestream-viewer.sh

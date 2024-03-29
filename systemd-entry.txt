@@ -1,8 +1,0 @@
-[Unit]
-Description=A service to automaticly start  a livestream.
-
-[Service]
-ExecStart=/bin/bash /usr/local/livestream-viewer/start-livestream-viewer.sh
-
-[Install]
-WantedBy=multi-user.target
